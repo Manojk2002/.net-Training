@@ -1,0 +1,7 @@
+C:\Users\manojkr\source\repos\CC01\CC01\obj\Debug\CC01.csproj.AssemblyReference.cache
+C:\Users\manojkr\source\repos\CC01\CC01\obj\Debug\CC01.csproj.CoreCompileInputs.cache
+C:\Users\manojkr\source\repos\CC01\CC01\bin\Debug\CC01.exe.config
+C:\Users\manojkr\source\repos\CC01\CC01\bin\Debug\CC01.exe
+C:\Users\manojkr\source\repos\CC01\CC01\bin\Debug\CC01.pdb
+C:\Users\manojkr\source\repos\CC01\CC01\obj\Debug\CC01.exe
+C:\Users\manojkr\source\repos\CC01\CC01\obj\Debug\CC01.pdb
