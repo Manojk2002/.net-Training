@@ -1,0 +1,7 @@
+C:\Users\manojkr\source\repos\Assignment07\Assignment07\bin\Debug\Assignment07.exe.config
+C:\Users\manojkr\source\repos\Assignment07\Assignment07\bin\Debug\Assignment07.exe
+C:\Users\manojkr\source\repos\Assignment07\Assignment07\bin\Debug\Assignment07.pdb
+C:\Users\manojkr\source\repos\Assignment07\Assignment07\obj\Debug\Assignment07.csproj.AssemblyReference.cache
+C:\Users\manojkr\source\repos\Assignment07\Assignment07\obj\Debug\Assignment07.csproj.CoreCompileInputs.cache
+C:\Users\manojkr\source\repos\Assignment07\Assignment07\obj\Debug\Assignment07.exe
+C:\Users\manojkr\source\repos\Assignment07\Assignment07\obj\Debug\Assignment07.pdb
