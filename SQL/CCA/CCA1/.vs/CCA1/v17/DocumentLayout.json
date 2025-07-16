@@ -1,0 +1,35 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manojkr\\Documents\\SQL Server Management Studio\\CCA1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC62254D-73E7-05AB-FC87-F8EAC050EF78}|CCA1\\CCA1.ssmssqlproj|C:\\Users\\manojkr\\Documents\\SQL Server Management Studio\\CCA1\\CCA1\\SQL CCA01.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}",
+      "RelativeMoniker": "D:0:0:{FC62254D-73E7-05AB-FC87-F8EAC050EF78}|CCA1\\CCA1.ssmssqlproj|solutionrelative:CCA1\\SQL CCA01.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SQL CCA01.sql - ICS-LT-16FT9K3\\SQLEXPRESS.Infinitedb (sa (52))",
+              "DocumentMoniker": "C:\\Users\\manojkr\\Documents\\SQL Server Management Studio\\CCA1\\CCA1\\SQL CCA01.sql",
+              "RelativeDocumentMoniker": "CCA1\\SQL CCA01.sql",
+              "ToolTip": "SQL CCA01.sql - ICS-LT-16FT9K3\\SQLEXPRESS.Infinitedb (sa (52))",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-16T05:26:26.147Z",
+              "EditorCaption": " - ICS-LT-16FT9K3\\SQLEXPRESS.Infinitedb (sa (52))"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
