@@ -89,7 +89,7 @@ insert into empprojecttasks values
 (401, 7011, '2011-10-22', '2011-10-31', 'sign off', 'completed'),
 (402, 7010, '2011-08-01', '2011-08-20', 'system analysis', 'completed'),
 (402, 7002, '2011-08-22', '2011-09-30', 'system design', 'completed'),
-(402, 7004, '2011-10-01', null, 'coding', 'in progress');
+(402, 7004, '2011-10-01', null , 'coding', 'in progress');
 
 
 select * from clients;
