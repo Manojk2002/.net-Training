@@ -1,3 +1,5 @@
+use InfiniteDb
+   
 create table dept (
    deptno int primary key,
    dname varchar(50),
@@ -88,7 +90,7 @@ select ename, sal from emp where ename in ('miller', 'smith');
 --> query 12: employees whose names start with 'a' or 'r'
 select * from emp where ename like 'a%' or ename like 'r%';
 
---> query 13: employees whose salary not in range 1500–2850
+--> query 13: employees whose salary not in range 1500â€“2850
 select *, sal from emp where sal not between 1500 and 2850;
 
 --> query 14: managers with more than 2 employees reporting to them
