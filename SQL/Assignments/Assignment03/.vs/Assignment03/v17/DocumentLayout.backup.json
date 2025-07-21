@@ -1,0 +1,35 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manojkr\\Documents\\SQL Server Management Studio\\Assignment03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{991315BE-1C31-00E7-DD29-33F0846FC6B6}|Assignment03\\Assignment03.ssmssqlproj|C:\\Users\\manojkr\\Documents\\SQL Server Management Studio\\Assignment03\\Assignment03\\A03.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}",
+      "RelativeMoniker": "D:0:0:{991315BE-1C31-00E7-DD29-33F0846FC6B6}|Assignment03\\Assignment03.ssmssqlproj|solutionrelative:Assignment03\\A03.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "A03.sql - ICS-LT-16FT9K3\\SQLEXPRESS.Infinitedb (sa (53))",
+              "DocumentMoniker": "C:\\Users\\manojkr\\Documents\\SQL Server Management Studio\\Assignment03\\Assignment03\\A03.sql",
+              "RelativeDocumentMoniker": "Assignment03\\A03.sql",
+              "ToolTip": "A03.sql - ICS-LT-16FT9K3\\SQLEXPRESS.Infinitedb (sa (53))",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-21T04:34:56.007Z",
+              "EditorCaption": " - ICS-LT-16FT9K3\\SQLEXPRESS.Infinitedb (sa (53))"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
