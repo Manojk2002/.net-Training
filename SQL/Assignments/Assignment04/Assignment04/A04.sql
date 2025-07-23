@@ -66,6 +66,7 @@ begin
    return (case when @score >= 50 then 'pass' else 'fail' end)
 end;
 go
+   go
 
 ------> Final output: student name, score, and status all in one
 select
