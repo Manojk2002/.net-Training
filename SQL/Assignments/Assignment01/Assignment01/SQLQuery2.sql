@@ -102,7 +102,7 @@ SELECT * FROM Clients;
 
 -- 2. List all employees with their department name
 SELECT E.Ename, D.Dname
-FROM Employees E
+from Employees E
 JOIN Departments D ON E.Deptno = D.Deptno;
 
 
