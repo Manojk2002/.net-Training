@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Web Development Tasks</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .section {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #0066cc;
+        }
+
+        /* Image overlay */
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+            .image-container img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .image-container:hover .image-overlay {
+            opacity: 1;
+        }
+
+        /* Button styles */
+        .stylish-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 20px auto;
+        }
+
+            .stylish-button:hover {
+                background-color: #004080;
+            }
+
+        /* Animation box */
+        .animate-box {
+            width: 100px;
+            height: 100px;
+            background: coral;
+            margin: 20px auto;
+            animation: pulse 1s ease-in-out 2s;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Definition list */
+        dl {
+            margin-left: 40px;
+        }
+
+        /* Tribute page styles */
+        .tribute-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <h1>Image Overlay on Hover</h1>
+        <div class="image-container">
+            <img src="Images/person.jpg" alt="Overlay Image" />
+            <div class="image-overlay">Hello There!</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h1>CSS Button</h1>
+        <button class="stylish-button">Click Me</button>
+    </div>
+
+    <div class="section">
+        <h1>Definition List</h1>
+        <dl>
+            <dt>HTML</dt>
+            <dd>The standard markup language for creating web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Style sheet language used for describing the appearance of a document.</dd>
+            <dt>JavaScript</dt>
+            <dd>Programming language used to add interactivity to websites.</dd>
+        </dl>
+    </div>
+
+    <div class="section">
+        <h1>Animation Delay & Restart</h1>
+        <div id="box" class="animate-box"></div>
+        <button class="stylish-button" onclick="restart()">Restart Animation</button>
+    </div>
+
+    <div class="section">
+        <h1>Tribute Page: Ratan Tata</h1>
+        <img class="tribute-img" src="Images/tribute_person.jpg" alt="Ratan Tata" />
+        <p>Ratan Tata was an Indian industrialist and philanthropist, best known for his leadership of the Tata Group from 1991 to 2012. He transformed the group into a global business through strategic acquisitions and innovation.</p>
+        <h2>Achievements</h2>
+        <ul>
+            <li>Chairman of Tata Group (1991–2012, 2016–2017).</li>
+            <li>Led acquisitions of Tetley, Jaguar Land Rover, and Corus Group.</li>
+            <li>Launched Tata Nano, the world’s cheapest car.</li>
+            <li>Received Padma Bhushan (2000) and Padma Vibhushan (2008).</li>
+            <li>Invested in over 40 startups and supported Indian entrepreneurship.</li>
+            <li>Known for his philanthropic work through Tata Trusts.</li>
+        </ul>
+    </div>
+
+    <script>
+function restart() {
+            const box = document.getElementById("box");
+            box.style.animation = "none";
+            void box.offsetHeight; // trigger reflow
+            box.style.animation = "pulse 1s ease-in-out 2s";
+}
+    </script>
+
+</body>
+</html>
