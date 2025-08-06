@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Tasks</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f8fa;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #d1d9e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+            .card:hover {
+                box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            }
+
+            .card h3 {
+                margin-top: 0;
+                color: #1a3c56;
+                font-size: 22px;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 10px;
+            }
+
+        .input-group {
+            margin-bottom: 12px;
+        }
+
+            .input-group label {
+                display: inline-block;
+                width: 140px;
+                font-weight: 500;
+            }
+
+            .input-group input {
+                padding: 8px;
+                width: 160px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+        .btn {
+            padding: 8px 16px;
+            margin: 5px 5px 0 0;
+            background-color: #e7edf3;
+            border: 1px solid #bcc7d5;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .btn:hover {
+                background-color: #d1e6f8;
+            }
+
+            .btn.active {
+                background-color: #007bff;
+                border-color: #007bff;
+                color: white;
+                font-weight: bold;
+            }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #eef3f7;
+        }
+
+        .highlight-h1 {
+            background-color: #c5f4cf;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        #resultOutput, #resultTable, #dynamicText {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Task 1 -->
+        <div class="card">
+            <h3>1. Multiply & Divide</h3>
+            <div class="input-group">
+                <label>First Number:</label>
+                <input type="number" id="inputA" value="10">
+            </div>
+            <div class="input-group">
+                <label>Second Number:</label>
+                <input type="number" id="inputB" value="5">
+            </div>
+            <button class="btn" id="btnMultiply">Multiply</button>
+            <button class="btn" id="btnDivide">Divide</button>
+            <div id="resultOutput"></div>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="card">
+            <h3>2. Even or Odd Table (0–15)</h3>
+            <button class="btn" id="btnGenTable">Generate</button>
+            <div id="resultTable"></div>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="card">
+            <h3>3. Alert on Button Click</h3>
+            <button class="btn" id="btnGreet">Click Me</button>
+        </div>
+
+        <!-- Task 4 -->
+        <div class="card">
+            <h3>4. Hide Odd Rows in Table</h3>
+            <button class="btn" id="btnHideOdd">Hide Odd Rows</button>
+            <table id="userTable">
+                <tr><th>ID</th><th>Name</th><th>Role</th></tr>
+                <tr><td>1</td><td>Aditi</td><td>Developer</td></tr>
+                <tr><td>2</td><td>Ravi</td><td>Manager</td></tr>
+                <tr><td>3</td><td>Meena</td><td>Designer</td></tr>
+                <tr><td>4</td><td>Ashwin</td><td>Tester</td></tr>
+            </table>
+        </div>
+
+        <!-- Task 5 -->
+        <div class="card">
+            <h3>5. Highlight h1 Inside Divs</h3>
+            <div>
+                <h1>This h1 is inside div</h1>
+                <p>Paragraph example</p>
+            </div>
+            <div>
+                <h1>Another div-contained h1</h1>
+            </div>
+            <h1>This h1 is outside div</h1>
+        </div>
+
+        <!-- Task 6 & 7 -->
+        <div class="card">
+            <h3>6 & 7. List Highlight & Index</h3>
+            <ul id="langList">
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>GoLang</li>
+            </ul>
+            <button class="btn" id="btnHighlightFirst">Highlight First</button>
+            <button class="btn" id="btnAddIndex">Add Index</button>
+        </div>
+
+        <!-- Task 8 -->
+        <div class="card">
+            <h3>8. Show Input on Change</h3>
+            <input type="text" id="userInput" placeholder="Type here..." />
+            <div id="dynamicText"></div>
+        </div>
+
+    </div>
+
+    <script>
+        // Multiply
+        $('#btnMultiply').click(function () {
+            let a = parseFloat($('#inputA').val());
+            let b = parseFloat($('#inputB').val());
+            $('.btn').removeClass('active');
+            $(this).addClass('active');
+
+            if (isNaN(a) || isNaN(b)) {
+                $('#resultOutput').text('Please enter valid numbers.');
+            } else {
+                $('#resultOutput').text('Result: ' + (a * b));
+            }
+        });
+
+        // Divide
+        $('#btnDivide').click(function () {
+            let a = parseFloat($('#inputA').val());
+            let b = parseFloat($('#inputB').val());
+            $('.btn').removeClass('active');
+            $(this).addClass('active');
+
+            if (isNaN(a) || isNaN(b)) {
+                $('#resultOutput').text('Please enter valid numbers.');
+            } else if (b === 0) {
+                $('#resultOutput').text('Cannot divide by zero!');
+            } else {
+                $('#resultOutput').text('Result: ' + (a / b));
+            }
+        });
+
+        // Odd/Even Table
+        $('#btnGenTable').click(function () {
+            let tbl = '<table><tr><th>Number</th><th>Type</th></tr>';
+            for (let i = 0; i <= 15; i++) {
+                tbl += `<tr><td>${i}</td><td>${i % 2 === 0 ? 'Even' : 'Odd'}</td></tr>`;
+            }
+            tbl += '</table>';
+            $('#resultTable').html(tbl);
+        });
+
+        // Greeting
+        $('#btnGreet').click(function () {
+            alert('Welcome to the Interactive jQuery Page!');
+            console.log('Welcome to the Interactive jQuery Page!');
+
+        });
+
+        // Hide odd rows
+        $('#btnHideOdd').click(function () {
+            $('#userTable tr:odd').hide();
+        });
+
+        // Highlight h1 inside divs
+        $('div > h1').addClass('highlight-h1');
+
+        // Highlight first list item
+        $('#btnHighlightFirst').click(function () {
+            $('#langList li:first').css('background-color', '#fff3cd');
+        });
+
+        // Add index to list
+        $('#btnAddIndex').click(function () {
+            $('#langList li').each(function (i) {
+                if (!$(this).text().startsWith(i + ' -')) {
+                    $(this).prepend(i + ' - ');
+                }
+            });
+        });
+
+        // Input change
+        $('#userInput').on('change', function () {
+            $('#dynamicText').append('<p>You typed: ' + $(this).val() + '</p>');
+        });
+    </script>
+</body>
+</html>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CCA_07
+namespace Codechallenge_07
 {
     class Program
     {

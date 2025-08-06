@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7CE6F414-AC5D-47A1-B5B6-B9B37885C2E3}</ProjectGuid>
+    <ProjectGuid>{C44276E0-19D6-4BC9-88D6-72764BAC35BA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CCA_07</RootNamespace>
-    <AssemblyName>CCA_07</AssemblyName>
+    <RootNamespace>Codechallenge_07</RootNamespace>
+    <AssemblyName>Codechallenge_07</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="jQuery Exercise.html" />
+    <Content Include="jQyery _ Tasks%281to8%29.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
