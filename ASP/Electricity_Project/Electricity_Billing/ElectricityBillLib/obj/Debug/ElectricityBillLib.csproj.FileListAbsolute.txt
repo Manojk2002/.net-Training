@@ -1,0 +1,5 @@
+C:\Users\manojkr\source\repos\Electricity_Billing\ElectricityBillLib\obj\Debug\ElectricityBillLib.csproj.CoreCompileInputs.cache
+C:\Users\manojkr\source\repos\Electricity_Billing\ElectricityBillLib\bin\Debug\ElectricityBillLib.dll
+C:\Users\manojkr\source\repos\Electricity_Billing\ElectricityBillLib\bin\Debug\ElectricityBillLib.pdb
+C:\Users\manojkr\source\repos\Electricity_Billing\ElectricityBillLib\obj\Debug\ElectricityBillLib.dll
+C:\Users\manojkr\source\repos\Electricity_Billing\ElectricityBillLib\obj\Debug\ElectricityBillLib.pdb
