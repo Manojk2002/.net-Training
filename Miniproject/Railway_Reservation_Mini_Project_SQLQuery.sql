@@ -107,7 +107,10 @@ INSERT INTO Cancellations (BookingId, RefundAmount, CancellationDate, TicketCanc
 
 
 Select * from Customers
+Select * from Trains
 
 SELECT * FROM Admins;
 SELECT * FROM Customers;
 SELECT * FROM Reservations;
+
+Select * from TrainClassAvailability
