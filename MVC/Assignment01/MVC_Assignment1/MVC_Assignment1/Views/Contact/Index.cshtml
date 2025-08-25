@@ -1,0 +1,22 @@
+﻿@model List<MVC_Assignment1.Models.Contact>
+
+<h2>Contact List</h2>
+<a href="@Url.Action("Create")">Add New Contact</a>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var contact in Model)
+    {
+        <tr>
+            <td>@contact.FirstName @contact.LastName</td>
+            <td>@contact.Email</td>
+            <td>
+                <a href="@Url.Action("Delete", new { id = contact.Id })">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+

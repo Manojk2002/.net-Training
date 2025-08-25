@@ -1,0 +1,16 @@
+﻿@model MVC_Assignment1.Models.Contact
+
+<h2>Create Contact</h2>
+@using (Html.BeginForm())
+{
+    <label>First Name</label>
+    @Html.TextBoxFor(m => m.FirstName)
+    <br />
+    <label>Last Name</label>
+    @Html.TextBoxFor(m => m.LastName)
+    <br />
+    <label>Email</label>
+    @Html.TextBoxFor(m => m.Email)
+    <br />
+    <button type="submit">Save</button>
+}
